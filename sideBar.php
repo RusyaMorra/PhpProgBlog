@@ -73,18 +73,29 @@
 
 
                         <?php 
-                            $last = last_id();  
+                            $lastid = last_id();  
                            
-                           echo var_dump($last);
+                           
+                           foreach($lastid as $last){
+                           
+                           }
                           
                             
                            // $last = (int)$last;
                            
-                          
+                          $lastuser = last_author();
                             
+                          foreach($lastuser as $lastuserid){
+                           
+                           }
+
                         ?> 
+
+
+
+
                         <div class="wrapper__txtonline">
-                            <div class="online__number1">0</div>
+                            <div class="online__number1"><?php echo sizeof(file($base));?></div>
                             <div class="online__text">Online</div>
                         </div>
 
@@ -92,7 +103,7 @@
 
                         
                         <div class="wrapper__txtonline">
-                            <div class="online__number2">100</div>
+                            <div class="online__number2"><?php echo  $lastuserid; ?></div>
                             <div class="online__text">Peaple</div>
                         </div>
                         <div class="pointorange3"></div>
