@@ -1,0 +1,172 @@
+<div class="side__bar">
+                    <div class="search">
+                        <label class="search__text" for="site-search">Search the site:</label>
+                       
+                       <div class="search__wrapper">
+                            <input class="search__input" type="search" id="site-search" name="q"
+                                aria-label="Search through site content" placeholder="Search">
+                            
+                            <button class="btn1">Search</button>
+                       </div>
+                    </div>
+                    <div class="sidebar__categories">
+                        <div class="categories__text">
+                            <div class="text__text1">Categories</div>
+                        </div> 
+                        <?php
+                                $category = get_category_by_id_header(1);
+                                $category2 = get_category_by_id_header(2);
+                                $category3 = get_category_by_id_header(3);
+                                $category4 = get_category_by_id_header(4);
+                                $category5 = get_category_by_id_header(5);
+                                $category6 = get_category_by_id_header(6);
+                                $category7 = get_category_by_id_header(7);
+                                $category8 = get_category_by_id_header(8);
+
+                                ?>
+                        <div class="Categories__list">
+                            <div class="categories__item"><div  class="front__effect"  width="30px" alt=""><div class="red"></div><div class="yellow"></div><div class="blue"></div><img class="hh" src="img/kisspng-website-development-javascript-html5-css3-cascadin-appload-comprehensive-software-and-mobile-app-de-5b7b834e216377.0246733915348211981368 (1).png" width="40px" alt=""></div> <?php echo $category; ?>............ <span class="posts__number">0</span></div>
+                       
+                            <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="blueback"></div><img class="hh" src="img/backend.png" width="40px" alt=""></div> <?php echo $category2; ?>............ <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="bluebackmob"></div><img class="hh" src="img/mob.png" width="40px" alt=""></div> <?php echo $category3; ?>........ <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="green"></div><img class="hh" src="img/applicationsgames_103778.png" width="40px" alt=""></div> <?php echo $category4; ?>........... <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="orange"></div><img class="hh" src="img/tools.png" width="40px" alt=""></div> <?php echo $category5; ?>................. <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redhack"></div><img class="hh" src="img/киберсек.png" width="40px" alt=""></div> <?php echo $category6; ?>.... <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redwind"></div><div class="grenwind"></div><div class="yllowwind"></div><div class="bluewind"></div><img class="hh" src="img/windows-logos-clip-art-36.png" width="40px" alt=""></div> <?php echo $category7; ?>..... <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div class="front__effect"   width="30px" alt=""><div class="bluecomp"></div><img class="hh" src="img/cs.png" width="40px" alt=""></div><?php echo $category8; ?>... <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div   width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number">0</span></div>
+                        </div>
+                    </div>
+                    <div class="vk">We are in VK</div>
+                    <div class="social__mediabox">
+                        <div class="img__groupName">
+                            <img class="img__group" src="img/Screenshot_11111.jpg"  width="40px" alt="">
+                            <div class="group__text">NZT - all you wanted to know</div>
+                        </div>
+                        <div class="group__indodiv">
+                            Objects only reveal internal mechanisms that are relevant for the use of other objects, detailed and careful.
+                            This property of OOP forces a more thorough data analysis
+                        </div>
+                        <div class="vk__prifilsarea">
+
+                        </div>
+                        <div class="button__area">
+                            <button class="btn__vk"><img class="img__vk" src="img/vk-reproductor.png" alt="" width="30px"> Subscribe</button>
+                        </div>
+                        
+                    </div>
+                    <div class="Adds">Adds</div>
+                    <div class="Adds__area">
+                         <!--Код рекламное место Blogspot начало -->
+                         <div class="wrapper__adds">
+                            <div class="lihat pasang-iklan">
+                                    <img alt="space iklan blogspot dengan CSS3" src="img/Screenshot_1.jpg" width="100%" height="100%" title="space iklan blogspot dengan CSS3"/>
+                                    <div class="masker">
+                                    <h2>The ad space is empty</h2>
+                                    <p>In order to place an ad on the pages of this site, please contact us...</p>
+                                    <a href="URL адрес страницы" class="informasi" target="_blank" rel="nofollow" title="Контакт">More detailed</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--Код рекламное место Blogspot конец -->
+                        <!--Код рекламное место Blogspot начало -->
+                           <div class="wrapper__adds">
+                            <div class="lihat pasang-iklan">
+                                    <img alt="space iklan blogspot dengan CSS3" src="img/Screenshot_2.jpg" width="100%" height="100%" title="space iklan blogspot dengan CSS3"/>
+                                    <div class="masker">
+                                    <h2>The ad space is empty</h2>
+                                    <p>In order to place an ad on the pages of this site, please contact us...</p>
+                                    <a href="URL адрес страницы" class="informasi" target="_blank" rel="nofollow" title="Контакт">More detailed</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--Код рекламное место Blogspot конец -->
+                        <!--Код рекламное место Blogspot начало -->
+                           <div class="wrapper__adds">
+                            <div class="lihat pasang-iklan">
+                                    <img alt="space iklan blogspot dengan CSS3" src="img/your-ad-here-internet-puppets-di.jpg" width="100%" height="100%" title="space iklan blogspot dengan CSS3"/>
+                                    <div class="masker">
+                                    <h2>The ad space is empty</h2>
+                                    <p>In order to place an ad on the pages of this site, please contact us...</p>
+                                    <a href="URL адрес страницы" class="informasi" target="_blank" rel="nofollow" title="Контакт">More detailed</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--Код рекламное место Blogspot конец -->
+                        <!--Код рекламное место Blogspot начало -->
+                           <div class="wrapper__adds">
+                            <div class="lihat pasang-iklan">
+                                    <img alt="space iklan blogspot dengan CSS3" src="img/your_ad_here_large.png" width="100%" height="100%" title="space iklan blogspot dengan CSS3"/>
+                                    <div class="masker">
+                                    <h2>The ad space is empty</h2>
+                                    <p>In order to place an ad on the pages of this site, please contact us...</p>
+                                    <a href="URL адрес страницы" class="informasi" target="_blank" rel="nofollow" title="Контакт">More detailed</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--Код рекламное место Blogspot конец -->
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="popular">Popular Posts</div>
+                    <div class="popular__area">
+                        <div class="Popular__wrapper">
+
+
+
+                        <?php 
+                           $popular = sort_by_views();
+
+                           foreach(  $popular as  $pop ): ?> 
+                        
+
+
+
+
+
+                            <div class="pop__postswrap">
+                                <div class="popul__countviews"> <img class="views__img" src="img/397eye_100362.png" alt="" width="15px"><?php echo $pop['views'] ?></div>
+                                <img class="img__popular" src="<?php echo $pop['img'] ?>" alt="">
+                                <a href="postPage.php?id= <?php echo $pop["id"]; ?>">  <div class="popular__artical"><?php echo $pop['title'] ?></div></a>
+                            </div>
+
+                            <?php endforeach?>
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="telegram__area">
+                        <div class="figure"></div>
+                        <div class="note">Get notifications about new <span class="txt3">materials </span> on your computers<br>
+                             and phones so that you don't miss anything interesting. </div>
+
+                        <div class="teleg__channel"><div class="tx1">Telegram channel</div>  <div class="tx2">NZT </div>  </div>
+                      <a href="https://tgram.ru/channels" class="linktel">  <img src="img/telegram.svg" alt="" class="telegram__img" width="110px"></a>
+                       <div class="impuls__wrapper"><div class="impuls"></div></div> 
+                       <div class="impuls__wrapper2"><div class="impuls2"></div></div> 
+                       <div class="impuls__wrapper3"><div class="impuls3"></div></div> 
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </section>

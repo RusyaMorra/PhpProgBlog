@@ -1,0 +1,24 @@
+@font-face {
+    font-family: hack1;
+    src: url(../fonts/MadHacker-Yjz8.ttf);
+}
+@font-face {
+    font-family: hack2;
+    src: url(../fonts/MadHacker-YYqv.ttf);
+}
+@font-face {
+    font-family: hack3;
+    src: url(../fonts/MadHackerItalic-8EOz.ttf);
+}
+@font-face {
+    font-family: hack4;
+    src: url(../fonts/MadHackerItalic-rPg9.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: mons;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
