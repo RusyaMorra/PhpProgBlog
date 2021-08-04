@@ -29,7 +29,7 @@
            </div>
          </div>
     </footer>
- 
+    <script type="text/javascript" src="js/script.js"></script> 
     <script src="https://kit.fontawesome.com/bca7bdd4e7.js" crossorigin="anonymous"></script>
 </body>
 </html>

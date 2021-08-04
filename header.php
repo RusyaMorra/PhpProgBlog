@@ -5,7 +5,9 @@
 
     
     <header class="header1">
+        
         <div class="container">
+            
             <div class="wrapper">
            <a href="/main.php" class="logo">
                 <img class="img__logo" src="img/PikPng.com_analytics-icon-png_1331301.png" alt="" width="60px">
@@ -48,13 +50,21 @@
                 <a href="main.php?id= <?php echo $categoryid6["id"]; ?>"> <li class="menu__item"><?php echo $category6; ?></li> </a>
                 <!--  <li class="menu__item">DeckstopDev</li>
                 <li class="menu__item">ComputerSciense</li>!-->
-                <li class="menu__item"> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
+                <li id="popmenu" class="menu__item1 "> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
             </ul>
             <div class="search__wrapper2">
                 <input class="search__input2" type="search" id="site-search" name="q"
                     aria-label="Search through site content" placeholder="Search">
                 <button class="btn2">Search</button>
             </div>
+            <div id="menu" class="menumore">
+                <a href="" class="menu_initem">Profile</a>
+                <a href="" class="menu_initem">DeckstopDev</a>
+                <a href="" class="menu_initem">Comp.sciense</a>
+                <a href="" class="menu_initem">Exit</a>
+            </div>
              </div>
+            
         </div>
+        
     </header>    

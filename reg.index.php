@@ -6,7 +6,7 @@
             <div class="wrapper__reg">
                 <form action="action_page.php" class="form__reg">
                     
-                    <h1 class="h1reg">Register</h1>
+                    <h1 id="redcolor" class="h1reg">Register</h1>
                     <p class="preg">Please fill in this form to create an account.</p>
                     <hr>
                 

@@ -15,12 +15,18 @@
                 <li class="menu__item">CyberSecurity</li>
                 <!--  <li class="menu__item">DeckstopDev</li>
                 <li class="menu__item">ComputerSciense</li>!-->
-                <li class="menu__item"> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
+                <li  id="popmenu" class="menu__item1"> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
             </ul>
              <div class="reg__logbtn">
               <a class="testlink" href="main.php"><button class="login">Sign in</button></a>
               <button class="registration">Registration</button>
              </div>
+            </div>
+            <div id="menu" class="menumore">
+                <div id="red_click1"  class="menu_initem"><img class="paddi" src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
+                <div id="red_click2" href="" class="menu_initem"><img class="paddi"  src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
+                <div id="red_click3" href="" class="menu_initem"><img class="paddi" src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
+                <divid="red_click4" href="" class="menu_initem"><img class="paddi"  src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
             </div>
         </div>
     </header>    
