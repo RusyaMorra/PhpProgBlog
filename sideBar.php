@@ -38,17 +38,37 @@
                                         
 
                                 ?>
+
+                                
+                        <?php 
+                            $lastid = last_id();  
+                           
+                           
+                           foreach($lastid as $last){
+                           
+                           }
+                          
+                            
+                           // $last = (int)$last;
+                           
+                          $lastuser = last_author();
+                            
+                          foreach($lastuser as $lastuserid){
+                           
+                           }
+
+                        ?> 
                         <div class="Categories__list">
                         <a href="main.php?id= <?php echo $categoryid["id"]; ?>">  <div class="categories__item"><div  class="front__effect"  width="30px" alt=""><div class="red"></div><div class="yellow"></div><div class="blue"></div><img class="hh" src="img/kisspng-website-development-javascript-html5-css3-cascadin-appload-comprehensive-software-and-mobile-app-de-5b7b834e216377.0246733915348211981368 (1).png" width="40px" alt=""></div> <?php echo $category; ?>............ <span class="posts__number">0</span></div></a>
                        
-                        <a href="main.php?id= <?php echo $categoryid2["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="blueback"></div><img class="hh" src="img/backend.png" width="40px" alt=""></div> <?php echo $category2; ?>............ <span class="posts__number">0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid3["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="bluebackmob"></div><img class="hh" src="img/mob.png" width="40px" alt=""></div> <?php echo $category3; ?>........ <span class="posts__number">0</span></div>
-                        <a href="main.php?id= <?php echo $categoryid4["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="green"></div><img class="hh" src="img/applicationsgames_103778.png" width="40px" alt=""></div> <?php echo $category4; ?>........... <span class="posts__number">0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid5["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="orange"></div><img class="hh" src="img/tools.png" width="40px" alt=""></div> <?php echo $category5; ?>................. <span class="posts__number">0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid6["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redhack"></div><img class="hh" src="img/киберсек.png" width="40px" alt=""></div> <?php echo $category6; ?>.... <span class="posts__number">0</span></div></a>
+                        <a href="main.php?id= <?php echo $categoryid2["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="blueback"></div><img class="hh" src="img/backend.png" width="40px" alt=""></div> <?php echo $category2; ?>............ <span class="posts__number"> 0</span></div></a>
+                        <a href="main.php?id= <?php echo $categoryid3["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="bluebackmob"></div><img class="hh" src="img/mob.png" width="40px" alt=""></div> <?php echo $category3; ?>........ <span class="posts__number"> 0</span></div>
+                        <a href="main.php?id= <?php echo $categoryid4["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="green"></div><img class="hh" src="img/applicationsgames_103778.png" width="40px" alt=""></div> <?php echo $category4; ?>........... <span class="posts__number"> 0</span></div></a>
+                        <a href="main.php?id= <?php echo $categoryid5["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="orange"></div><img class="hh" src="img/tools.png" width="40px" alt=""></div> <?php echo $category5; ?>................. <span class="posts__number"> 0</span></div></a>
+                        <a href="main.php?id= <?php echo $categoryid6["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redhack"></div><img class="hh" src="img/киберсек.png" width="40px" alt=""></div> <?php echo $category6; ?>.... <span class="posts__number"> 0</span></div></a>
                         <a href="main.php?id= <?php echo $categoryid7["id"]; ?>">     <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redwind"></div><div class="grenwind"></div><div class="yllowwind"></div><div class="bluewind"></div><img class="hh" src="img/windows-logos-clip-art-36.png" width="40px" alt=""></div> <?php echo $category7; ?>..... <span class="posts__number">0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid8["id"]; ?>">    <div class="categories__item"><div class="front__effect"   width="30px" alt=""><div class="bluecomp"></div><img class="hh" src="img/cs.png" width="40px" alt=""></div><?php echo $category8; ?>... <span class="posts__number">0</span></div></a>
-                            <div class="categories__item"><div   width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number">0</span></div>
+                        <a href="main.php?id= <?php echo $categoryid8["id"]; ?>">    <div class="categories__item"><div class="front__effect"   width="30px" alt=""><div class="bluecomp"></div><img class="hh" src="img/cs.png" width="40px" alt=""></div><?php echo $category8; ?>... <span class="posts__number"> 0</span></div></a>
+                            <div class="categories__item"><div   width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number"> <?php echo   $last; ?></span></div>
                         </div>
                     </div>
                     <div class="vk">We are in VK</div>
@@ -62,7 +82,8 @@
                             This property of OOP forces a more thorough data analysis
                         </div>
                         <div class="vk__prifilsarea">
-
+                          <div class="vk__textwrapperg"></div>
+                         <ul class="vk__list"></ul>
                         </div>
                         <div class="button__area">
                             <button class="btn__vk"><img class="img__vk" src="img/vk-reproductor.png" alt="" width="30px"> Subscribe</button>

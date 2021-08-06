@@ -24,6 +24,25 @@
                                 $category8 = get_category_by_id_header(8);
 
                                 ?>
+
+<?php 
+                            $lastid = last_id();  
+                           
+                           
+                           foreach($lastid as $last){
+                           
+                           }
+                          
+                            
+                           // $last = (int)$last;
+                           
+                          $lastuser = last_author();
+                            
+                          foreach($lastuser as $lastuserid){
+                           
+                           }
+
+                        ?> 
                         <div class="Categories__list">
                             <div class="categories__item"><div  class="front__effect"  width="30px" alt=""><div class="red"></div><div class="yellow"></div><div class="blue"></div><img class="hh" src="img/kisspng-website-development-javascript-html5-css3-cascadin-appload-comprehensive-software-and-mobile-app-de-5b7b834e216377.0246733915348211981368 (1).png" width="40px" alt=""></div> <?php echo $category; ?>............ <span class="posts__number">0</span></div>
                        
@@ -34,7 +53,7 @@
                             <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redhack"></div><img class="hh" src="img/киберсек.png" width="40px" alt=""></div> <?php echo $category6; ?>.... <span class="posts__number">0</span></div>
                             <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redwind"></div><div class="grenwind"></div><div class="yllowwind"></div><div class="bluewind"></div><img class="hh" src="img/windows-logos-clip-art-36.png" width="40px" alt=""></div> <?php echo $category7; ?>..... <span class="posts__number">0</span></div>
                             <div class="categories__item"><div class="front__effect"   width="30px" alt=""><div class="bluecomp"></div><img class="hh" src="img/cs.png" width="40px" alt=""></div><?php echo $category8; ?>... <span class="posts__number">0</span></div>
-                            <div class="categories__item"><div   width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number">0</span></div>
+                            <div class="categories__item"><div   width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number"><?php echo   $last; ?></span></div>
                         </div>
                     </div>
                     <div class="vk">We are in VK</div>

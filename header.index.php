@@ -26,7 +26,7 @@
                 <div id="red_click1"  class="menu_initem"><img class="paddi" src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
                 <div id="red_click2" href="" class="menu_initem"><img class="paddi"  src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
                 <div id="red_click3" href="" class="menu_initem"><img class="paddi" src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
-                <divid="red_click4" href="" class="menu_initem"><img class="paddi"  src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
+                <div id="red_click4" href="" class="menu_initem"><img class="paddi"  src="img/замок.png" alt="" class="locked" width="25px"> Private</div>
             </div>
         </div>
     </header>    
