@@ -61,7 +61,7 @@
                 <a href="" class="menu_initem">Profile</a>
                 <a href="" class="menu_initem">DeckstopDev</a>
                 <a href="" class="menu_initem">Comp.sciense</a>
-                <a href="" class="menu_initem">Exit</a>
+                <a href="vendor/logout.php" class="menu_initem">Exit</a>
             </div>
              </div>
             

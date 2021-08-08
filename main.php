@@ -1,3 +1,10 @@
+<?php session_start(); 
+
+if(!$_SESSION['user']){
+    header('location: /');
+}
+
+?>
 
 <!--head -->
 <?php  require'headMainPage.php';   ?>

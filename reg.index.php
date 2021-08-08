@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php session_start(); 
+
+if($_SESSION['user']){
+    header('location: ../main.php');
+}
+
+?>
+
 
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=58ytkmr6j63&amp;
          m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;
@@ -7,7 +14,12 @@
         <div class="container">
             <div class="wrapper__reg">
 
-                <form id="registerform" action="vendor/signup.php" method="post" class="form__reg">
+
+
+
+
+
+                <form  id="registerform" action="vendor/signup.php" method="post" class="form__reg">
                     
                     <h1 id="redcolor" class="h1reg">Register</h1>
                     <p class="preg">Please fill in this form to create an account.</p>
@@ -37,25 +49,31 @@
                         echo  '<p class="error__massage">' .$_SESSION['massage'] . '</p>';
                     }
                      
+                    if ($_SESSION['massagesuccess'] ){
+                        echo  '<p class="success__massage">' .$_SESSION['massagesuccess'] . '</p>';
+                    }
+                     
                     unset($_SESSION['massage'] );
+                    unset($_SESSION['massagesuccess'] );
+
                     ?>
                 </form>
 
 
 
 
-                <form id="logform" action="action_page.php" class="form__signin">
+                <form   id="logform" action="vendor/signin.php" method="post" class="form__signin">
                     
                     <h1 id="redcolor" class="h1reg">Sign in</h1>
                     <p class="preg">Please fill in this form to login.</p>
                     <hr>
                 
-                    <label for="Username"><b class="emailstyle">Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="email"><b class="emailstyle">Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" required>
                    
                 
                     <label for="psw"><b class="passwordstyle">Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="password" required>
                 
                     
                 
@@ -66,7 +84,10 @@
                     <div class="container__signin">
                     <p class="alreadyhaveanacc">Already have no account? <a id="btnregister" href="#">register</a>.</p>
                     </div>
+               
                 </form>
+
+
 
 
 

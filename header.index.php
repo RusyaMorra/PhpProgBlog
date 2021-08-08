@@ -18,7 +18,7 @@
                 <li  id="popmenu" class="menu__item1"> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
             </ul>
              <div class="reg__logbtn">
-              <a  class="testlink" href="main.php"><button id="btnsgin2" class="login">Sign in</button></a>
+              <button id="btnsgin2" class="login">Sign in</button>
               <button id="btnregister2" class="registration">Registration</button>
              </div>
             </div>

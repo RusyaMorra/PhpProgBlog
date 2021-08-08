@@ -1,3 +1,5 @@
+
+
 <?php
 
 //users online
@@ -46,6 +48,11 @@ if ($id!="") {
  }
 }
 ?>
+
+
+
+
+
 
 
 <?php
@@ -194,5 +201,48 @@ function last_author(){
     }
  
 }
+
+
+
+
+
+
+function insert_author($author_name,$email,$password){
+    global  $db;
+    $sqlinsert  = $db->query ("INSERT INTO author (`id`, `author_name`, `email`, `password`) VALUES (NULL, '$author_name', '$email', '$password')");
+  
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+?>
+
+
+
 
 

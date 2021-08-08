@@ -466,8 +466,21 @@ width: 60%;
      padding: 10px;
      text-align: center;
      font-weight: bold;
-     font-size: 20px;
+     font-size: 27px;
      color: red;
      margin: auto;
      border-radius: 5px;
+ }
+
+
+ .success__massage{
+    width: 800px;
+    border: 2px solid greenyellow;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    color: greenyellow;
+    margin: auto;
+    border-radius: 5px;
  }
