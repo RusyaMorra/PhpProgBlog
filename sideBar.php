@@ -86,7 +86,7 @@
                          <ul class="vk__list"></ul>
                         </div>
                         <div class="button__area">
-                            <button class="btn__vk"><img class="img__vk" src="img/vk-reproductor.png" alt="" width="30px"> Subscribe</button>
+                            <button  onclick="window.location.href = 'https://vk.com/public169552305';" class="btn__vk"><img class="img__vk" src="img/vk-reproductor.png" alt="" width="30px"> Subscribe</button>
                         </div>
                     </div>
                     <div class="online">

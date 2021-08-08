@@ -7,19 +7,19 @@
             </a>
             
             <ul class="menu__items">
-                <li class="menu__item">Frontend</li>
-                <li class="menu__item">Backend</li>
-                <li class="menu__item">MobileDev</li>
-                <li class="menu__item">GameDev</li>
-                <li class="menu__item">Tools</li>
-                <li class="menu__item">CyberSecurity</li>
+                <li id="red_click5" class="menu__item">Frontend</li>
+                <li id="red_click6" class="menu__item">Backend</li>
+                <li id="red_click7" class="menu__item">MobileDev</li>
+                <li id="red_click8" class="menu__item">GameDev</li>
+                <li id="red_click9" class="menu__item">Tools</li>
+                <li id="red_click10" class="menu__item">CyberSecurity</li>
                 <!--  <li class="menu__item">DeckstopDev</li>
                 <li class="menu__item">ComputerSciense</li>!-->
                 <li  id="popmenu" class="menu__item1"> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
             </ul>
              <div class="reg__logbtn">
-              <a class="testlink" href="main.php"><button class="login">Sign in</button></a>
-              <button class="registration">Registration</button>
+              <a  class="testlink" href="main.php"><button id="btnsgin2" class="login">Sign in</button></a>
+              <button id="btnregister2" class="registration">Registration</button>
              </div>
             </div>
             <div id="menu" class="menumore">

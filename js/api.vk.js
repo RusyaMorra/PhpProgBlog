@@ -13,12 +13,12 @@ $(document).ready(function(){
             method: 'GET',
             dataType: 'JSONP',
             success: function(data){
-                drawFriends(data.response);
+               // drawFriends(data.response);
                 console.log(data)
                 
             }
         });
-    
+    /*
      function drawFriends(friends){
         
         var html = '';
@@ -43,7 +43,7 @@ $(document).ready(function(){
         $('.vk__textwrapperg').html (peapleInGroup);
       }
 
- 
+ */
 
 });
  

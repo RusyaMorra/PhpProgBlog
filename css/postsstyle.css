@@ -660,6 +660,65 @@ input:-ms-input-placeholder {color: grey;}
 }
 
 
+
+
+
+
+
+.vk__list{
+    width: 100%;
+    height: 80px;
+   
+    position: absolute;
+    bottom: 10px;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
+.imgvkstyle{
+border-radius: 50%;
+width: 50px;
+cursor: pointer;
+margin: 0px;
+padding: 0px;
+}
+.textvkstyle{
+color: white;
+font-size: 7px;
+font-family: mons;
+cursor: pointer;
+margin: 0px;
+padding: 0px;
+text-align: center;
+}
+
+.textvkstyle:hover{
+    background: linear-gradient(30deg,yellow, orange,red,pink) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.vk__textwrapperg{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.vk__num{
+    color: white;
+    font-family: mons;
+    font-size: 14px;
+    
+    background: linear-gradient(30deg,yellow, orange,red,pink) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .Adds{
     width: 100%;
     height: 100px;
@@ -2376,6 +2435,7 @@ font-size: 14px;
     .vk__prifilsarea{
         width: 100%;
         height: 160px;
+        position: relative;
         
     }
     .button__area{
