@@ -1,3 +1,6 @@
+
+  <?php  session_start();  ?>
+
 <section class="section__main">
         <div class="container">
             <div class="wrapper__main">
@@ -7,7 +10,7 @@
 
 
 
-
+                                 
 
 
 
@@ -120,153 +123,110 @@
                                  </div>
 
                              </div>
+                        
+                              <?php 
+
+
+                                
+                                $lastcomment =  last_comment();  
+
+                                foreach($lastcomment  as $lastcommentid){
+                           
+                                }
+                               
+
+
+
+                             
+                              ?>
+
                              <div class="comments__form">
-                                <form action="./" method="post" class="frm__comments">
+                                <form action="insertcomments/insertcomment.php" method="post" class="frm__comments">
                                     
+                                  
+                                
                                     <div class="lb__wrapper">
-                                        <label for="comment">Comments(5) </label>
+                                        <label for="comment">Comments(<?php echo   $lastcommentid; ?>) </label>
                                     </div>
+                                    
                                     <div class="txter__Wrapper">
                                         <textarea class="mm" name="comment" id="comment" placeholder="Your text"></textarea>
-                                    
+                                         
                                         <button class="btntextare" type="submit">Publish</button>
                                     </div>
+                                  
                                 </form>
-                                <div class="commentshere">
-                                    <div class="comment__box">
-                                        <div class="imgprofile"><img src="img/hacker.png" width="70px" alt=""></div>
-                                        <div class="text__contentcomments">
-                                            <div class="person__data">
-                                                <div class="comment__athorname">Rusya__morra</div>
-                                                <div class="comment__data"> 24.07.21 in 15:00</div>
-                                            </div>
-                                            <div class="textarea__comments">
-                                                Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or 
-                                                to perform a specific task. Programming involves tasks such as: analysis, generating algorithms,
-                                                 profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a 
-                                                 chosen programming language (commonly referred to as coding).
-                                            </div>
-                                            <div class="button__answerandlike">
-                                                <button class="answer">Answers(2)</button>
-                                                <div class="like_dislike">
-                                                   <button class="like">Like</button>
-                                                   <button class="dislike">Dislike</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment__box">
-                                        <div class="imgprofile"><img src="img/hacker.png" width="70px" alt=""></div>
-                                        <div class="text__contentcomments">
-                                            <div class="person__data">
-                                                <div class="comment__athorname">Rusya__morra</div>
-                                                <div class="comment__data"> 24.07.21 in 15:00</div>
-                                            </div>
-                                            <div class="textarea__comments">
-                                                Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or 
-                                                to perform a specific task. Programming involves tasks such as: analysis, generating algorithms,
-                                                 profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a 
-                                                 chosen programming language (commonly referred to as coding).
-                                            </div>
-                                            <div class="button__answerandlike">
-                                                <button class="answer">Answers(0)</button>
-                                                <div class="like_dislike">
-                                                   <button class="like">Like</button>
-                                                   <button class="dislike">Dislike</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment__box">
-                                        <div class="imgprofile"><img src="img/hacker.png" width="70px" alt=""></div>
-                                        <div class="text__contentcomments">
-                                            <div class="person__data">
-                                                <div class="comment__athorname">Rusya__morra</div>
-                                                <div class="comment__data"> 24.07.21 in 15:00</div>
-                                            </div>
-                                            <div class="textarea__comments">
-                                                Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or 
-                                                to perform a specific task. Programming involves tasks such as: analysis, generating algorithms,
-                                                 profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a 
-                                                 chosen programming language (commonly referred to as coding).
-                                            </div>
-                                            <div class="button__answerandlike">
-                                                <button class="answer">Answers(5)</button>
-                                                <div class="like_dislike">
-                                                   <button class="like">Like</button>
-                                                   <button class="dislike">Dislike</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment__box">
-                                        <div class="imgprofile"><img src="img/hacker.png" width="70px" alt=""></div>
-                                        <div class="text__contentcomments">
-                                            <div class="person__data">
-                                                <div class="comment__athorname">Rusya__morra</div>
-                                                <div class="comment__data"> 24.07.21 in 15:00</div>
-                                            </div>
-                                            <div class="textarea__comments">
-                                                Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or 
-                                                to perform a specific task. Programming involves tasks such as: analysis, generating algorithms,
-                                                 profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a 
-                                                 chosen programming language (commonly referred to as coding).
-                                            </div>
-                                            <div class="button__answerandlike">
-                                                <button class="answer">Answers(4)</button>
-                                                <div class="like_dislike">
-                                                   <button class="like">Like</button>
-                                                   <button class="dislike">Dislike</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment__box">
-                                        <div class="imgprofile"><img src="img/hacker.png" width="70px" alt=""></div>
-                                        <div class="text__contentcomments">
-                                            <div class="person__data">
-                                                <div class="comment__athorname">Rusya__morra</div>
-                                                <div class="comment__data"> 24.07.21 in 15:00</div>
-                                            </div>
-                                            <div class="textarea__comments">
-                                                Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or 
-                                                to perform a specific task. Programming involves tasks such as: analysis, generating algorithms,
-                                                 profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a 
-                                                 chosen programming language (commonly referred to as coding).
-                                            </div>
-                                            <div class="button__answerandlike">
-                                                <button class="answer">Answers(0)</button>
-                                                <div class="like_dislike">
-                                                   <button class="like">Like</button>
-                                                   <button class="dislike">Dislike</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment__box">
-                                        <div class="imgprofile"><img src="img/hacker.png" width="70px" alt=""></div>
-                                        <div class="text__contentcomments">
-                                            <div class="person__data">
-                                                <div class="comment__athorname">Rusya__morra</div>
-                                                <div class="comment__data"> 24.07.21 in 15:00</div>
-                                            </div>
-                                            <div class="textarea__comments">
-                                                Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result or 
-                                                to perform a specific task. Programming involves tasks such as: analysis, generating algorithms,
-                                                 profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a 
-                                                 chosen programming language (commonly referred to as coding).
-                                            </div>
-                                            <div class="button__answerandlike">
-                                                <button class="answer">Answers(0)</button>
-                                                <div class="like_dislike">
-                                                   <button class="like">Like</button>
-                                                   <button class="dislike">Dislike</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php
+                                        if ($_SESSION['massage'] ){
+                                            echo  '<p class="error__massage">' .$_SESSION['massage'] . '</p>';
+                                        }
+                                        
+                                        if ($_SESSION['massagesuccess'] ){
+                                            echo  '<p class="success__massage">' .$_SESSION['massagesuccess'] . '</p>';
+                                        }
+                                        
+                                        unset($_SESSION['massage'] );
+                                        unset($_SESSION['massagesuccess'] );
 
-                             </div>
+                                        ?>
+
+
+                                    
+
+
+
+
+
+
+                                <div class="commentshere">
+
+
+
+
+                                      
+                                    <?php    
+                                     $comments= get_all_comments();
+
+
+
+
+
+                                     foreach( $comments as $comment): ?>
+                                       
+                                    <?php 
+                                    
+                                    $author_name =  get_author_by_id($comment[author_id]);
+                                    
+                                    ?>
+
+                                        <div class="comment__box">
+                                            <div class="imgprofile"><img src="img/hacker.png" width="70px" alt=""></div>
+                                            <div class="text__contentcomments">
+                                                <div class="person__data">
+                                                    <div class="comment__athorname"><?php echo $author_name ?></div>
+                                                    <div class="comment__data"> <?php echo date("d.m.Y в H:i", strtotime( $comment["date"]));  ?></div>
+                                                </div>
+                                                <div class="textarea__comments">
+                                                    <?php echo $comment['comment'] ;?>
+                                                </div>
+                                                <div class="button__answerandlike">
+                                                    <button class="answer">Answers( <?php echo $comment['answers'] ;?>)</button>
+                                                    <div class="like_dislike">
+                                                    <button class="like">Like(  <?php echo $comment['likes'] ;?>)</button>
+                                                    <button class="dislike">Dislike(  <?php echo $comment['dislikes'] ;?>)</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <?php endforeach?>
+
+                       
+                                
+                                
+                                
+                                
+                                </div>
+                            </div>
                         </div>
                     </div>

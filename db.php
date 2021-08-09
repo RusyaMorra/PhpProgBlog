@@ -205,7 +205,7 @@ function last_author(){
 
 
 
-
+//insert in db user
 
 function insert_author($author_name,$email,$password){
     global  $db;
@@ -221,6 +221,30 @@ function insert_author($author_name,$email,$password){
 
 
 
+//get all comments
+
+
+function get_all_comments(){
+    global  $db;
+    $allcomments =  $db->query("SELECT * FROM comments ");
+    return $allcomments;
+}
+
+
+
+
+
+
+
+
+
+//APDATE likes by ID
+
+function likes_update($id){
+    global  $db;
+    $db->query("UPDATE comments SET views = views + 1 WHERE id=$id");
+ 
+}
 
 
 
@@ -231,12 +255,31 @@ function insert_author($author_name,$email,$password){
 
 
 
+//insert in db user
+
+function insert_comment($comment,$nameid){
+    global  $db;
+    $sqlinsertcomments  = $db->query ("INSERT INTO `comments` (`id`, `comment`, `author_id`, `date`, `likes`, `dislikes`, `answers`) VALUES (NULL, '$comment', '$nameid', '2021-08-09 20:11:01.000000', '0', '0', '0')");
+  
+    
+ 
+}
 
 
 
 
 
+//last comment
 
+function last_comment(){
+    global  $db;
+   $last_comment =  $db->query("SELECT MAX(`id`) FROM `comments` ");
+  
+   foreach($last_comment as $lastcomment){
+    return $lastcomment;
+    }
+ 
+}
 
 
 

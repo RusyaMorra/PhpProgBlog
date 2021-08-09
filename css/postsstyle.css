@@ -563,10 +563,10 @@ padding-top: 10px;
 
 
 
-input[placeholder]          {color: grey; }
-input::-moz-placeholder     {color: grey;} 
-input:-moz-placeholder      {color: grey;} 
-input:-ms-input-placeholder {color: grey;}    
+input[placeholder]          { color: grey; }
+input::-moz-placeholder     {  color: grey;} 
+input:-moz-placeholder      {  color: grey;} 
+input:-ms-input-placeholder {  color: grey;}    
 
 
 
@@ -2182,7 +2182,7 @@ font-size: 14px;
 .mm{
     width: 80%;
     height: 38px;
-    font-size: 23px;
+    font-size: 19px;
     color: gray;
     outline: none;
     border-radius: 3px;
@@ -2350,7 +2350,7 @@ font-size: 14px;
 
 
 .like_dislike{
-    width: 100px;
+    width: 145px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2483,4 +2483,30 @@ font-size: 14px;
         .img__vk{
             border-radius: 10px;
             margin-right: 15px;
+        }
+
+
+        .error__massage{
+            width: 200px;
+            border: 2px solid red;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            color: red;
+          
+            border-radius: 5px;
+        }
+       
+       
+        .success__massage{
+           width: 200px;
+           border: 2px solid greenyellow;
+           padding: 5px;
+           text-align: center;
+           font-weight: bold;
+           font-size: 15px;
+           color: greenyellow;
+         
+           border-radius: 5px;
         }

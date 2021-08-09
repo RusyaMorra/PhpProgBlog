@@ -60,7 +60,7 @@
                     <div class="social__mediabox">
                         <div class="img__groupName">
                             <img class="img__group" src="img/Screenshot_11111.jpg"  width="40px" alt="">
-                            <div class="group__text">NZT - all you wanted to know</div>
+                            <a href="https://vk.com/public169552305">    <div class="group__text">NZT - all you wanted to know</div> </a>
                         </div>
                         <div class="group__indodiv">
                             Objects only reveal internal mechanisms that are relevant for the use of other objects, detailed and careful.
