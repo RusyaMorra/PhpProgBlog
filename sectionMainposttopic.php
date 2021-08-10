@@ -140,12 +140,12 @@
                              
                               ?>
 
-                             <div class="comments__form">
-                                <form action="insertcomments/insertcomment.php" method="post" class="frm__comments">
+                             <div id="anchorforit" class="comments__form" >
+                                <form  action="insertcomments/insertcomment.php #anchorforit" method="post" class="frm__comments">
                                     
                                   
                                 
-                                    <div class="lb__wrapper">
+                                    <div  class="lb__wrapper">
                                         <label for="comment">Comments(<?php echo   $lastcommentid; ?>) </label>
                                     </div>
                                     

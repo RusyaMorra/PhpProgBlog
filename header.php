@@ -22,6 +22,8 @@
             $category4 = get_category_by_id_header(4);
             $category5 = get_category_by_id_header(5);
             $category6 = get_category_by_id_header(6);
+            $category7 = get_category_by_id_header(7);
+            $category8 = get_category_by_id_header(8);
 
           ?>
 
@@ -32,6 +34,8 @@
            $categoryid4=get_category_id(4);
            $categoryid5=get_category_id(5);
            $categoryid6=get_category_id(6);
+           $categoryid7=get_category_id(7);
+           $categoryid8=get_category_id(8);
            
 
           ?>
@@ -42,12 +46,12 @@
                
             
             
-                <a href="main.php?id= <?php echo $categoryid["id"]; ?>"> <li class="menu__item"><?php echo $category; ?></li> </a>
-                <a href="main.php?id= <?php echo $categoryid2["id"]; ?>"> <li class="menu__item"><?php echo $category2; ?></li> </a>
-                <a href="main.php?id= <?php echo $categoryid3["id"]; ?>"> <li class="menu__item"><?php echo $category3; ?></li> </a>
-                <a href="main.php?id= <?php echo $categoryid4["id"]; ?>"> <li class="menu__item"><?php echo $category4; ?></li> </a>
-                <a href="main.php?id= <?php echo $categoryid5["id"]; ?>"> <li class="menu__item"><?php echo $category5; ?></li> </a>
-                <a href="main.php?id= <?php echo $categoryid6["id"]; ?>"> <li class="menu__item"><?php echo $category6; ?></li> </a>
+                <a href="main.php?category= <?php echo $categoryid["id"]; ?>"> <li class="menu__item"><?php echo $category; ?></li> </a>
+                <a href="main.php?category= <?php echo $categoryid2["id"]; ?>"> <li class="menu__item"><?php echo $category2; ?></li> </a>
+                <a href="main.php?category= <?php echo $categoryid3["id"]; ?>"> <li class="menu__item"><?php echo $category3; ?></li> </a>
+                <a href="main.php?category= <?php echo $categoryid4["id"]; ?>"> <li class="menu__item"><?php echo $category4; ?></li> </a>
+                <a href="main.php?category= <?php echo $categoryid5["id"]; ?>"> <li class="menu__item"><?php echo $category5; ?></li> </a>
+                <a href="main.php?category= <?php echo $categoryid6["id"]; ?>"> <li class="menu__item"><?php echo $category6; ?></li> </a>
                 <!--  <li class="menu__item">DeckstopDev</li>
                 <li class="menu__item">ComputerSciense</li>!-->
                 <li id="popmenu" class="menu__item1 "> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
@@ -58,9 +62,9 @@
                 <button class="btn2">Search</button>
             </div>
             <div id="menu" class="menumore">
-                <a href="" class="menu_initem">Profile</a>
-                <a href="" class="menu_initem">DeckstopDev</a>
-                <a href="" class="menu_initem">Comp.sciense</a>
+                <a href="userprofile.php" class="menu_initem">Profile</a>
+                <a  href="main.php?category= <?php echo $categoryid7["id"]; ?>" class="menu_initem"><?php echo $category7; ?></a>
+                <a  href="main.php?category= <?php echo $categoryid8["id"]; ?>"class="menu_initem"><?php echo $category8; ?></a>
                 <a href="vendor/logout.php" class="menu_initem">Exit</a>
             </div>
              </div>

@@ -1,3 +1,5 @@
+
+
 <div class="side__bar">
                     <div class="search">
                         <label class="search__text" for="site-search">Search the site:</label>
@@ -58,17 +60,22 @@
                            }
 
                         ?> 
+
+                      
+                   
+
+
                         <div class="Categories__list">
-                        <a href="main.php?id= <?php echo $categoryid["id"]; ?>">  <div class="categories__item"><div  class="front__effect"  width="30px" alt=""><div class="red"></div><div class="yellow"></div><div class="blue"></div><img class="hh" src="img/kisspng-website-development-javascript-html5-css3-cascadin-appload-comprehensive-software-and-mobile-app-de-5b7b834e216377.0246733915348211981368 (1).png" width="40px" alt=""></div> <?php echo $category; ?>............ <span class="posts__number">0</span></div></a>
+                        <a  href="main.php?category= <?php echo $categoryid["id"]; ?>">  <div data-aos="zoom-in-left" class="categories__item"><div  class="front__effect"  width="30px" alt=""><div class="red"></div><div class="yellow"></div><div class="blue"></div><img class="hh" src="img/kisspng-website-development-javascript-html5-css3-cascadin-appload-comprehensive-software-and-mobile-app-de-5b7b834e216377.0246733915348211981368 (1).png" width="40px" alt=""></div> <?php echo $category; ?>............ <span class="posts__number"><?php echo $res1 ?></span></div></a>
                        
-                        <a href="main.php?id= <?php echo $categoryid2["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="blueback"></div><img class="hh" src="img/backend.png" width="40px" alt=""></div> <?php echo $category2; ?>............ <span class="posts__number"> 0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid3["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="bluebackmob"></div><img class="hh" src="img/mob.png" width="40px" alt=""></div> <?php echo $category3; ?>........ <span class="posts__number"> 0</span></div>
-                        <a href="main.php?id= <?php echo $categoryid4["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="green"></div><img class="hh" src="img/applicationsgames_103778.png" width="40px" alt=""></div> <?php echo $category4; ?>........... <span class="posts__number"> 0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid5["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="orange"></div><img class="hh" src="img/tools.png" width="40px" alt=""></div> <?php echo $category5; ?>................. <span class="posts__number"> 0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid6["id"]; ?>">    <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redhack"></div><img class="hh" src="img/киберсек.png" width="40px" alt=""></div> <?php echo $category6; ?>.... <span class="posts__number"> 0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid7["id"]; ?>">     <div class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redwind"></div><div class="grenwind"></div><div class="yllowwind"></div><div class="bluewind"></div><img class="hh" src="img/windows-logos-clip-art-36.png" width="40px" alt=""></div> <?php echo $category7; ?>..... <span class="posts__number">0</span></div></a>
-                        <a href="main.php?id= <?php echo $categoryid8["id"]; ?>">    <div class="categories__item"><div class="front__effect"   width="30px" alt=""><div class="bluecomp"></div><img class="hh" src="img/cs.png" width="40px" alt=""></div><?php echo $category8; ?>... <span class="posts__number"> 0</span></div></a>
-                            <div class="categories__item"><div   width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number"> <?php echo   $last; ?></span></div>
+                        <a href="main.php?category= <?php echo $categoryid2["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="blueback"></div><img class="hh" src="img/backend.png" width="40px" alt=""></div> <?php echo $category2; ?>............ <span class="posts__number"> <?php echo $res2 ?></span></div></a>
+                        <a href="main.php?category= <?php echo $categoryid3["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="bluebackmob"></div><img class="hh" src="img/mob.png" width="40px" alt=""></div> <?php echo $category3; ?>........ <span class="posts__number"> <?php echo $res3 ?></span></div>
+                        <a href="main.php?category= <?php echo $categoryid4["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="green"></div><img class="hh" src="img/applicationsgames_103778.png" width="40px" alt=""></div> <?php echo $category4; ?>........... <span class="posts__number"> <?php echo $res4 ?></span></div></a>
+                        <a href="main.php?category= <?php echo $categoryid5["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="orange"></div><img class="hh" src="img/tools.png" width="40px" alt=""></div> <?php echo $category5; ?>................. <span class="posts__number"> <?php echo $res5 ?></span></div></a>
+                        <a href="main.php?category= <?php echo $categoryid6["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redhack"></div><img class="hh" src="img/киберсек.png" width="40px" alt=""></div> <?php echo $category6; ?>.... <span class="posts__number"> <?php echo $res6 ?></span></div></a>
+                        <a href="main.php?category= <?php echo $categoryid7["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redwind"></div><div class="grenwind"></div><div class="yllowwind"></div><div class="bluewind"></div><img class="hh" src="img/windows-logos-clip-art-36.png" width="40px" alt=""></div> <?php echo $category7; ?>..... <span class="posts__number"><?php echo $res7 ?></span></div></a>
+                        <a href="main.php?category= <?php echo $categoryid8["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"   width="30px" alt=""><div class="bluecomp"></div><img class="hh" src="img/cs.png" width="40px" alt=""></div><?php echo $category8; ?>... <span class="posts__number"> <?php echo $res8 ?></span></div></a>
+                            <div class="categories__item"><div  data-aos="zoom-in-left"  width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number"> <?php echo   $last; ?></span></div>
                         </div>
                     </div>
                     <div class="vk">We are in VK</div>

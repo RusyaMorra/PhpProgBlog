@@ -34,5 +34,13 @@
     <script type="text/javascript" src="js/api.vk.js"></script> 
     <script type="text/javascript" src="js/appeaSignInForm.js"></script> 
     <script src="https://kit.fontawesome.com/bca7bdd4e7.js" crossorigin="anonymous"></script>
+
+
+    <!--библиотека-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+      AOS.init();
+</script>
 </body>
 </html>

@@ -12,14 +12,14 @@ if($_SESSION['user']){
          hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
     <section class="log__reg">
         <div class="container">
-            <div class="wrapper__reg">
+            <div id="anchorforit" class="wrapper__reg">
 
 
 
 
 
 
-                <form  id="registerform" action="vendor/signup.php" method="post" class="form__reg">
+                <form  id="registerform" action="vendor/signup.php #anchorforit" method="post" class="form__reg">
                     
                     <h1 id="redcolor" class="h1reg">Register</h1>
                     <p class="preg">Please fill in this form to create an account.</p>

@@ -82,6 +82,13 @@ try {
 
 
 
+$connect = mysqli_connect('localhost', 'root', '', 'progblog');
+
+if(!$connect){
+    die('ошибка');
+}
+
+
 //get whole bunch of posts 
 
 function get_Posts_all(){
@@ -280,6 +287,39 @@ function last_comment(){
     }
  
 }
+
+
+
+function cat_num($id){
+    global  $connect;
+    $check_categotysnum =   mysqli_query($connect, "SELECT * FROM `posts` WHERE `category_id`=  '$id'  ");
+    return $check_categotysnum;
+
+}
+
+
+
+$cat1 = cat_num(1);
+$cat2 = cat_num(2);
+$cat3 = cat_num(3);
+$cat4 = cat_num(4);
+$cat5 = cat_num(5);
+$cat6 = cat_num(6);
+$cat7 = cat_num(7);
+$cat8 = cat_num(8);
+                           
+  $res1 =  mysqli_num_rows($cat1 );
+  $res2 =  mysqli_num_rows($cat2 );
+  $res3 =  mysqli_num_rows($cat3 );
+  $res4 =  mysqli_num_rows($cat4 );
+  $res5 =  mysqli_num_rows($cat5 );
+  $res6 =  mysqli_num_rows($cat6 );
+  $res7 =  mysqli_num_rows($cat7 );
+  $res8 =  mysqli_num_rows($cat8 );
+
+
+
+
 
 
 

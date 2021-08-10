@@ -5,9 +5,28 @@
                    
 
 
+                
+
+
+              
+
+
+                     
+               
+  
 
 
 
+
+
+
+
+
+
+
+
+                 
+                 
                    <?php
                    $Posts = get_Posts_all();
 
@@ -19,8 +38,8 @@
                       $author_name =  get_author_by_id($single[author_id]);
                     
                     ?>
-
-                    <div class="info__box">
+                  
+                    <div  data-aos="zoom-in" class="info__box">
                     <a href="postPage.php?id= <?php echo $single["id"]; ?>" class="linktothesecondpage">   <button class="read">READ</button></a>
                        <div class="content__area">
                            
@@ -49,18 +68,42 @@
 
                        <?php endforeach?>
 
-
-
-
-
-
-
+                   
+                 
                     
-          
+                   
 
 
 
-               
+                       <?php 
+                
+                $uri = $_SERVER['REQUEST_URI'];
+                
+                
+                if($uri =='main.php') {  ?>
+
+
+                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 <?php    } ?>
 
 
 
