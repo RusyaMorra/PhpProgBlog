@@ -1,60 +1,3 @@
-
-
-<?php
-
-//users online
-
-
-session_start();
-//выделяем уникальный идентификатор сессии
-$id = session_id();
-
-if ($id!="") {
- //текущее время
- $CurrentTime = time();
- //через какое время сессии удаляются
- $LastTime = time() - 600;
- //файл, в котором храним идентификаторы и время
- $base = "session.txt";
-
- $file = file($base);
- $k = 0;
- for ($i = 0; $i < sizeof($file); $i++) {
-  $line = explode("|", $file[$i]);
-   if ($line[1] > $LastTime) {
-   $ResFile[$k] = $file[$i];
-   $k++;
-  }
- }
-
- for ($i = 0; $i<sizeof($ResFile); $i++) {
-  $line = explode("|", $ResFile[$i]);
-  if ($line[0]==$id) {
-      $line[1] = trim($CurrentTime)."\n";
-      $is_sid_in_file = 1;
-  }
-  $line = implode("|", $line); $ResFile[$i] = $line;
- }
-
- $fp = fopen($base, "w");
- for ($i = 0; $i<sizeof($ResFile); $i++) { fputs($fp, $ResFile[$i]); }
- fclose($fp);
-
- if (!$is_sid_in_file) {
-  $fp = fopen($base, "a-");
-  $line = $id."|".$CurrentTime."\n";
-  fputs($fp, $line);
-  fclose($fp);
- }
-}
-?>
-
-
-
-
-
-
-
 <?php
 require "config.php";
 
@@ -96,6 +39,8 @@ function get_Posts_all(){
    $Posts =  $db->query("SELECT * FROM posts");
    return $Posts;
 }
+
+
 
 //get post by ID
 
@@ -317,6 +262,21 @@ $cat8 = cat_num(8);
   $res7 =  mysqli_num_rows($cat7 );
   $res8 =  mysqli_num_rows($cat8 );
 
+
+
+
+
+
+
+//select where id = category id
+
+
+
+function get_Posts_all_where_cat_categoryid($id){
+    global  $db;
+   $postcat =  $db->query("SELECT * FROM `posts` WHERE `category_id`=  '$id' ");
+   return  $postcat;
+}
 
 
 

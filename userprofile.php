@@ -1,8 +1,14 @@
 
 <!--db -->
-<?php  require'db.php';   ?>
+
+<?php  require'db.php';  
+session_start();
+?>
 <!--db end -->
-<?php require 'config.php';?>
+<?php require 'config.php';
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,19 +48,19 @@
                 </div>
             </div>
             <hr>
-            <form   id="profileform" action="" method="post" class="form__profile" enctype="multipart/form-data">
+            <form   id="profileform" action="insertpost/insertpost.php" method="post" class="form__profile" enctype="multipart/form-data">
                                 
-                                <h1 id="redcolor" class="h1reg">Create your own post.</h1>
-                                <p class="preg">Create post.</p>
+                                <h1 id="redcolor" class="cretitl">Create your own post.</h1>
+                               
                             
                                 
-                                <label for="Title"><b class="titlestyle">Title</b></label>
+                                <label class="acc" for="Title"><b class="titlestyle">Title</b></label>
                                 <input type="text" placeholder="Enter Title" name="title" required>
                             
                             
-                                <label for="Post_text"><b class="Post_text">Post text</b></label>
+                                <label class="acc" for="Post_text"><b class="Post_text">Post text</b></label>
                                 <textarea class="textarea1" name="textarea" id="textarea" placeholder="Your text"></textarea>
-                            
+                                <label class="acc" for="Post_text"><b class="Post_text">choose your category</b></label>
                                 <select   name="category" id="">
 
 
@@ -71,9 +77,10 @@
                                
                       
                               </select>
-                              <input type="file" name="f">
+                              <label class="acc" for="Post_text"><b class="Post_text">Upload a picture</b></label>
+                              <input type="file" name="file">
                                 
-                                <button type="submit" class="registerbtn">Sign in</button>
+                                <button type="submit" class="btnsumpostinsert">To publish</button>
                                 
                             
                             

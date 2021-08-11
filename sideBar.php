@@ -75,7 +75,7 @@
                         <a href="main.php?category= <?php echo $categoryid6["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redhack"></div><img class="hh" src="img/киберсек.png" width="40px" alt=""></div> <?php echo $category6; ?>.... <span class="posts__number"> <?php echo $res6 ?></span></div></a>
                         <a href="main.php?category= <?php echo $categoryid7["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"  width="30px" alt=""><div class="redwind"></div><div class="grenwind"></div><div class="yllowwind"></div><div class="bluewind"></div><img class="hh" src="img/windows-logos-clip-art-36.png" width="40px" alt=""></div> <?php echo $category7; ?>..... <span class="posts__number"><?php echo $res7 ?></span></div></a>
                         <a href="main.php?category= <?php echo $categoryid8["id"]; ?>">    <div data-aos="zoom-in-left" class="categories__item"><div class="front__effect"   width="30px" alt=""><div class="bluecomp"></div><img class="hh" src="img/cs.png" width="40px" alt=""></div><?php echo $category8; ?>... <span class="posts__number"> <?php echo $res8 ?></span></div></a>
-                            <div class="categories__item"><div  data-aos="zoom-in-left"  width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number"> <?php echo   $last; ?></span></div>
+                        <a href="/main.php">     <div class="categories__item"><div  data-aos="zoom-in-left"  width="30px" alt=""><img class="hh" src="img/icons8-меню-50.png" width="40px" alt=""></div>All categories.... <span class="posts__number"> <?php echo   $last; ?></span></div></a>
                         </div>
                     </div>
                     <div class="vk">We are in VK</div>
@@ -121,6 +121,8 @@
 
 
 
+
+                      <?php  require 'online.php'  ?>
 
                         <div class="wrapper__txtonline">
                             <div class="online__number1"><?php echo sizeof(file($base));?></div>
