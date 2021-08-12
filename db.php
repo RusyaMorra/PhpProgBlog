@@ -34,9 +34,9 @@ if(!$connect){
 
 //get whole bunch of posts 
 
-function get_Posts_all(){
+function get_Posts_all($limit,$offset){
     global  $db;
-   $Posts =  $db->query("SELECT * FROM posts");
+   $Posts =  $db->query("SELECT * FROM posts LIMIT $limit  OFFSET $offset");
    return $Posts;
 }
 
@@ -279,7 +279,13 @@ function get_Posts_all_where_cat_categoryid($id){
 }
 
 
-
+function insert_post($title,$textarea,$path,$date,$category,$author_id){
+    global  $db;
+    $insertpost  = $db->query ("INSERT INTO `posts` (`id`, `title`, `text`, `img`, `date`, `views`, `comments`, `category_id`, `author_id`) VALUES (NULL, '$title', '$textarea', '$path', '$date:00', '0', '0', '$category', '$author_id')");
+  
+    
+ 
+}
 
 
 

@@ -5,32 +5,13 @@
                    
 
 
-                
+                <?php
+                   $id = isset($_GET['id']) ? $_GET['id']: 1 ;
+                   $limit = 13 ;
+                   $offset =  $limit * ($id -1);
+                   $Posts = get_Posts_all($limit,$offset);
 
-
-              
-
-
-                     
-               
-  
-
-
-
-
-
-
-
-
-
-
-
-                 
-                 
-                   <?php
-                   $Posts = get_Posts_all();
-
-
+                   
                    foreach( $Posts as $single ): ?>
                     <?php 
                      $category_name  = get_category_by_id(  $single[category_id]);
@@ -76,6 +57,31 @@
 
                             
                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

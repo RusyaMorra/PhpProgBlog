@@ -37,18 +37,18 @@ session_start();
 
 <section class="profile">
     <div class="container">
-        <div class="wrapperprofile">
+        <div id="idanchor" class="wrapperprofile">
             <div class="profilenamemailid">
                 <div class="wrapper__inner">
                     <img src="img/hacker.png" alt="" width="70px">
                     <div class="nameandemail">
-                        <div class="name">Rusya Morra</div>
-                        <div class="email">asdasdasd@mail.ru</div>
+                        <div class="name"><?php echo $_SESSION['user']['author_name']  ?></div>
+                        <div class="email"><?php echo $_SESSION['user']['email']  ?></div>
                     </div>
                 </div>
             </div>
             <hr>
-            <form   id="profileform" action="insertpost/insertpost.php" method="post" class="form__profile" enctype="multipart/form-data">
+            <form   id="profileform" action="insertpost/insertpost.php  #idanchor" method="post" class="form__profile" enctype="multipart/form-data">
                                 
                                 <h1 id="redcolor" class="cretitl">Create your own post.</h1>
                                
@@ -66,7 +66,7 @@ session_start();
 
                         
                                 <option>category</option>
-                                <option>Frontend</option>
+                                <option>1</option>
                                 <option>Backend</option>
                                 <option>MobileDev</option>
                                 <option>GameDev</option>
@@ -82,6 +82,25 @@ session_start();
                                 
                                 <button type="submit" class="btnsumpostinsert">To publish</button>
                                 
+                                
+                                  <div class=" wrapsessinmassage">    <?php
+                                        if ($_SESSION['massage'] ){
+                                            echo  '<p class="error__massage">' .$_SESSION['massage'] . '</p>';
+                                        }
+                                        if ($_SESSION['massageupload'] ){
+                                            echo  '<p class="error__massage">' .$_SESSION['massageupload'] . '</p>';
+                                        }
+                                        
+                                        if ($_SESSION['massagesuccess'] ){
+                                            echo  '<p class="success__massage">' .$_SESSION['massagesuccess'] . '</p>';
+                                        }
+                                        
+                                        unset($_SESSION['massage'] );
+                                        unset($_SESSION['massagesuccess'] );
+                                        unset($_SESSION['massageupload'] );
+
+                                        ?>
+                                        </div>
                             
                             
                         

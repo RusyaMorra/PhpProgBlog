@@ -379,6 +379,7 @@ border-radius: 5px;
     color: white;
     font-family: mons;
     opacity: .9;
+    text-align: center;
 }
 .email{
     font-size: 10px;
@@ -508,11 +509,11 @@ a {
 .form__profile{
 width: 60%;
 margin: auto;
-height:750px;
+height:780px;
 background-image: url('../img/maxresdefault.jpg');
 opacity: .8;
 border-radius: 5px;
-margin-bottom: 40px;
+margin-bottom: 10px;
 }
 
 .emailstyle{
@@ -551,24 +552,36 @@ display: none;
 .error__massage{
  width: 800px;
  border: 2px solid red;
- padding: 10px;
+ padding: 5px;
  text-align: center;
  font-weight: bold;
- font-size: 27px;
+ font-size: 21px;
  color: red;
  margin: auto;
  border-radius: 5px;
+ margin-bottom: 5px;
 }
 
 
 .success__massage{
 width: 800px;
 border: 2px solid greenyellow;
-padding: 10px;
+padding: 5px;
 text-align: center;
 font-weight: bold;
-font-size: 27px;
+font-size: 21px;
 color: greenyellow;
 margin: auto;
 border-radius: 5px;
+}
+
+
+
+
+
+.wrapsessinmassage{
+width: 100%;
+height: 70px;
+
+
 }
