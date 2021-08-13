@@ -1,11 +1,15 @@
 
-<!--db -->
 
-<?php  require'db.php';  
+
+<?php
 session_start();
+
+
 ?>
-<!--db end -->
+
 <?php require 'config.php';
+
+require 'db.php';  
 
 
 ?>
@@ -18,6 +22,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $config['title'] ?></title>
     <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="shortcut icon" href="img/PikPng.com_analytics-icon-png_1331301.png" type="image/x-icon">
 </head>
@@ -46,6 +51,7 @@ session_start();
                         <div class="email"><?php echo $_SESSION['user']['email']  ?></div>
                     </div>
                 </div>
+                
             </div>
             <hr>
             <form   id="profileform" action="insertpost/insertpost.php  #idanchor" method="post" class="form__profile" enctype="multipart/form-data">
@@ -65,8 +71,8 @@ session_start();
 
 
                         
-                                <option>category</option>
-                                <option>1</option>
+                                <option selected="true" disabled="disabled">category</option>
+                                <option>Frontend</option>
                                 <option>Backend</option>
                                 <option>MobileDev</option>
                                 <option>GameDev</option>
@@ -78,7 +84,7 @@ session_start();
                       
                               </select>
                               <label class="acc" for="Post_text"><b class="Post_text">Upload a picture</b></label>
-                              <input type="file" name="file">
+                              <input type="file" class="ss" name="file">
                                 
                                 <button type="submit" class="btnsumpostinsert">To publish</button>
                                 
@@ -107,9 +113,54 @@ session_start();
             </form>
             <hr>
         </div>
-       
+          <h1 class="textmyposts">Your posts down there!<img src="img/arrowdown.png" width="35px"></h1>
         <div class="postsbyautor">
+        <?php
 
+                  $idauthorprof= $_SESSION['user']['id'];
+        
+                   $id = isset($_GET['main.php?id=']) ? $_GET['main.php?id=']: 1 ;
+                   $limit = 4 ;
+                   $offset =  $limit * ($id -1);
+                   $Posts = get_Posts_by_author_id_profile($idauthorprof,$limit,$offset);
+
+                   
+                   foreach( $Posts as $single ): ?>
+                    <?php 
+                     $category_name  = get_category_by_id(  $single[category_id]);
+                    
+                      $author_name =  get_author_by_id($single[author_id]);
+                      
+                    ?>
+                  <?php  if($_SERVER['REQUEST_URI'] == '/userprofile.php'){ ?>
+                    <div  data-aos="zoom-in" class="info__box">
+                    <a href="postPage.php?id= <?php echo $single["id"]; ?>" class="linktothesecondpage">   <button class="read">READ</button></a>
+                       <div class="content__area">
+                           
+                           <img src="<?php echo $single["img"]; ?>" alt="" class="box__img">
+                           <div class="textcontent__box">
+                               <div class="categ__article__descri">
+                                    <div class="categoris"><?php echo $category_name; ?></div>
+                                     <a href="postPage.php?id= <?php echo $single["id"]; ?>" class="linktothesecondpage"><div class="article"><?php echo $single["title"]; ?></div></a>
+                                    <div class="description"><?php  echo $string = substr($single["text"],0,350);  ?>........</div>
+                                 </div>
+                                 <div class="down__items">
+                                     <div class="wrapper__items">
+                                         <div class="items__two">
+                                            <div class="avthor"> <img class="author__img" src="img/hacker.png" alt="" width="15px"> <?php echo $author_name ?></div>
+                                            <div class="data"> <img class="calendar" src="img/calendar.png" alt="" width="15px"> <?php echo date("d.m.Y в H:i", strtotime($single["date"]));  ?></div>
+                                        </div>
+                                        <div class="items__two">
+                                            <div class="views">  <img class="views__img" src="img/397eye_100362.png" alt="" width="15px"> <?php echo $single["views"]; ?></div>
+                                            <div class="comments"> <img class="comments__img" src="img/comment_icon-icons.com_74433.png" alt="" width="15px"> <?php echo $single["comments"]; ?></div>
+                                        </div>
+                                     </div>
+                                 </div>
+                           </div>
+                       </div>
+                    </div>
+                    <?php  } ?>
+                     <?php endforeach?>
         </div>
 
     </div>

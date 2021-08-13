@@ -6,8 +6,8 @@
 
 
                 <?php
-                   $id = isset($_GET['id']) ? $_GET['id']: 1 ;
-                   $limit = 13 ;
+                   $id = isset($_GET['main.php?id=']) ? $_GET['main.php?id=']: 1 ;
+                   $limit = 14 ;
                    $offset =  $limit * ($id -1);
                    $Posts = get_Posts_all($limit,$offset);
 

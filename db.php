@@ -36,7 +36,7 @@ if(!$connect){
 
 function get_Posts_all($limit,$offset){
     global  $db;
-   $Posts =  $db->query("SELECT * FROM posts LIMIT $limit  OFFSET $offset");
+   $Posts =  $db->query("SELECT * FROM posts LIMIT $limit  OFFSET $offset ");
    return $Posts;
 }
 
@@ -176,9 +176,9 @@ function insert_author($author_name,$email,$password){
 //get all comments
 
 
-function get_all_comments(){
+function get_all_comments($limit,$offset){
     global  $db;
-    $allcomments =  $db->query("SELECT * FROM comments ");
+    $allcomments =  $db->query("SELECT * FROM comments LIMIT $limit  OFFSET $offset ");
     return $allcomments;
 }
 
@@ -278,13 +278,22 @@ function get_Posts_all_where_cat_categoryid($id){
    return  $postcat;
 }
 
-
-function insert_post($title,$textarea,$path,$date,$category,$author_id){
+//insert in posts
+function insert_post($title,$textarea,$path,$date,$cat,$author_id){
     global  $db;
-    $insertpost  = $db->query ("INSERT INTO `posts` (`id`, `title`, `text`, `img`, `date`, `views`, `comments`, `category_id`, `author_id`) VALUES (NULL, '$title', '$textarea', '$path', '$date:00', '0', '0', '$category', '$author_id')");
+    $insertpost  = $db->query ("INSERT INTO `posts` (`id`, `title`, `text`, `img`, `date`, `views`, `comments`, `category_id`, `author_id`) VALUES (NULL, '$title', '$textarea', '$path', '$date:00', '0', '0', '$cat', '$author_id')");
   
     
  
+}
+//autors posts
+
+
+
+function get_Posts_by_author_id_profile($idauthorprof,$limit,$offset){
+    global  $db;
+   $Posts =  $db->query("SELECT * FROM `posts` WHERE `author_id` = '$idauthorprof' LIMIT $limit  OFFSET $offset ");
+   return $Posts;
 }
 
 

@@ -184,10 +184,15 @@
 
 
                                       
-                                    <?php    
-                                     $comments= get_all_comments();
-
-
+                                    <?php  
+                                    
+                                    
+                                    $id = isset($_GET['id']) ? $_GET['id']: 1 ;
+                                     $limit = 13 ;
+                                     $offset =  $limit * ($id -1);
+                                     $comments= get_all_comments($limit,$offset);
+                                     
+                                     
 
 
 

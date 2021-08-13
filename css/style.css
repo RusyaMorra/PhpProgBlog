@@ -2234,3 +2234,19 @@ line-height: 1.5rem;
         border-radius: 10px;
         margin-right: 15px;
     }
+
+
+
+.slider{
+    height: 100%;
+}    
+
+
+.slick-list {
+    height: 100%;
+}
+
+.slick-track{
+    height: 100%;
+}
+

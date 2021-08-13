@@ -1,8 +1,13 @@
 <?php 
 session_start();
+require "../config.php";
 
+$dbhost = $config['db']['server'];
+$dbname = $config['db']['name'];
+$username =$config['db']['username'];
+$password = $config['db']['password'];
 
-$connect = mysqli_connect('localhost', 'root', '', 'progblog');
+$connect = mysqli_connect($dbhost, $username , $password , $dbname);
 
 if(!$connect){
     die('ошибка');
