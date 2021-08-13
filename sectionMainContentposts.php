@@ -6,10 +6,12 @@
 
 
                 <?php
-                   $id = isset($_GET['main.php?id=']) ? $_GET['main.php?id=']: 1 ;
-                   $limit = 14 ;
-                   $offset =  $limit * ($id -1);
-                   $Posts = get_Posts_all($limit,$offset);
+                   $page = isset($_GET['page'])? $_GET['page']:1 ;
+                   $limit  = 14 ;
+                   $offset =  $limit*($page-1) ;
+                    
+                   
+                   $Posts = get_Posts_all( $offset,$limit);
 
                    
                    foreach( $Posts as $single ): ?>
@@ -19,7 +21,7 @@
                       $author_name =  get_author_by_id($single[author_id]);
                       
                     ?>
-                  <?php  if($_SERVER['REQUEST_URI'] == '/main.php'){ ?>
+                  <?php  if($_SERVER['REQUEST_URI'] == '/main.php' || $_GET['page']){ ?>
                     <div  data-aos="zoom-in" class="info__box">
                     <a href="postPage.php?id= <?php echo $single["id"]; ?>" class="linktothesecondpage">   <button class="read">READ</button></a>
                        <div class="content__area">

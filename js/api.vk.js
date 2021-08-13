@@ -2,7 +2,7 @@ $(document).ready(function(){
     function getUrl(method,params){
         if (!method) throw new Error('Вы не указали метод!');
         params = params || {};
-        params['access_token'] = 'df227ee488de8256701044877165027b3792c4165092059e10d786f28083e8b6eddb7f48f83a56a9e1074';
+        params['access_token'] = 'ecd3956d42d2270e132f09c4d01957f4550451633dbd24e393bccb21038a18a9c2ab2d3750e5ad7105231';
         return 'https://api.vk.com/method/'+ method +'?'+ $.param(params)+ '&v=5.52';
     }
     
@@ -13,12 +13,12 @@ $(document).ready(function(){
             method: 'GET',
             dataType: 'JSONP',
             success: function(data){
-               // drawFriends(data.response);
-                console.log(data)
+                drawFriends(data.response);
+                //console.log(data)
                 
             }
         });
-    /*
+    
      function drawFriends(friends){
         
         var html = '';
@@ -43,7 +43,7 @@ $(document).ready(function(){
         $('.vk__textwrapperg').html (peapleInGroup);
       }
 
- */
+ 
 
 });
  

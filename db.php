@@ -34,9 +34,9 @@ if(!$connect){
 
 //get whole bunch of posts 
 
-function get_Posts_all($limit,$offset){
+function get_Posts_all($offset,$limit){
     global  $db;
-   $Posts =  $db->query("SELECT * FROM posts LIMIT $limit  OFFSET $offset ");
+   $Posts =  $db->query("SELECT *  FROM `posts` WHERE `id` > 0 LIMIT $offset,$limit ");
    return $Posts;
 }
 
@@ -290,9 +290,9 @@ function insert_post($title,$textarea,$path,$date,$cat,$author_id){
 
 
 
-function get_Posts_by_author_id_profile($idauthorprof,$limit,$offset){
+function get_Posts_by_author_id_profile($idauthorprof,$offset,$limit){
     global  $db;
-   $Posts =  $db->query("SELECT * FROM `posts` WHERE `author_id` = '$idauthorprof' LIMIT $limit  OFFSET $offset ");
+   $Posts =  $db->query("SELECT * FROM `posts` WHERE  `author_id` = '$idauthorprof' AND `id` > 0  LIMIT $offset,$limit ");
    return $Posts;
 }
 

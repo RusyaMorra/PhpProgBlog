@@ -62,10 +62,10 @@
                 <button class="btn2">Search</button>
             </div>
             <div id="menu" class="menumore">
-                <a href="userprofile.php" class="menu_initem">Profile</a>
+            <img src="img/arrowdown.png" width="35px">  <a href="userprofile.php" class="menu_initem"><img class="oo" src="img/YWiI.gif" width="25px">Profile</a>
                 <a  href="main.php?category= <?php echo $categoryid7["id"]; ?>" class="menu_initem"><?php echo $category7; ?></a>
                 <a  href="main.php?category= <?php echo $categoryid8["id"]; ?>"class="menu_initem"><?php echo $category8; ?></a>
-                <a href="vendor/logout.php" class="menu_initem">Exit</a>
+                <a href="vendor/logout.php" class="menu_initem"><img class="ooo" src="img/2M2E.gif" width="20px">Exit</a>
             </div>
              </div>
             

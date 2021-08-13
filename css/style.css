@@ -140,7 +140,7 @@ transition: transform 0.25s;
 
 .menu_initem{
     width: 100%;
-    height: 51px;
+    height: 43px;
     background-color:  #332f2f;
     color: white;
     font-size: 15px;
@@ -2250,3 +2250,11 @@ line-height: 1.5rem;
     height: 100%;
 }
 
+.oo{
+ border-radius: 50%;   
+ margin-right: 5px;
+}
+.ooo{
+ border-radius: 50%;   
+ margin-right: 10px;
+}
