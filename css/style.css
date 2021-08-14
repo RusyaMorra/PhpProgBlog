@@ -203,8 +203,15 @@ padding-top: 35px;
 .content__part{
     width: 72%;
     height: 100%;
-    
+    transition: all ease 500ms;
   
+}
+
+
+
+
+.content__part div.info__box.hide {
+    display:none
 }
 
 .side__bar{
@@ -225,6 +232,8 @@ margin-bottom: 25px;
 position: relative;
 border-radius: 3px;
 }
+
+
 .read{
     width:200px;
     height: 30px;

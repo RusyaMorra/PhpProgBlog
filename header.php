@@ -57,7 +57,7 @@
                 <li id="popmenu" class="menu__item1 "> <img src="img/icons8-меню-50.png" alt="" width="15px"> All categories </li>
             </ul>
             <div class="search__wrapper2">
-                <input class="search__input2" type="search" id="site-search" name="q"
+                <input class="search__input2" type="search" id="elastic2" name="q"
                     aria-label="Search through site content" placeholder="Search">
                 <button class="btn2">Search</button>
             </div>

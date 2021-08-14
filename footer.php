@@ -33,6 +33,7 @@
     <script type="text/javascript" src="js/script.js"></script> 
     <script type="text/javascript" src="js/api.vk.js"></script> 
     <script type="text/javascript" src="js/slick.js"></script> 
+    <script type="text/javascript" src="js/search.js"></script> 
     <script type="text/javascript" src="js/appeaSignInForm.js"></script> 
     <script src="https://kit.fontawesome.com/bca7bdd4e7.js" crossorigin="anonymous"></script>
 

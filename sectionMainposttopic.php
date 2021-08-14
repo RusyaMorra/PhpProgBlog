@@ -71,11 +71,11 @@
                                 <div class="textsoc">To share in social media:</div>
                                 <div class="dws-button dws-facebook"><a href="https://www.facebook.com/DWstroy-1415456785391372/" target="_blank">
                                    <div class="dws-share"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                                   <div class="dws-text">51</div>
+                                   <div class="dws-text">0</div>
                                 </a></div>
                                 <div class="dws-button dws-vk"><a href="https://vk.com/dwstroy" target="_blank">
                                    <div class="dws-share"><i class="fa fa-vk" aria-hidden="true"></i></div>
-                                   <div class="dws-text">730</div>
+                                   <div class="dws-text">0</div>
                                 </a></div>
                                 <div class="dws-button dws-twitter"><a href="#">
                                    <div class="dws-share"><i class="fa fa-twitter" aria-hidden="true"></i></div>
@@ -83,7 +83,7 @@
                                 </a></div>
                                 <div class="dws-button dws-youtube"><a href="https://www.youtube.com/channel/UCTgx8cZRD5Jz2_zGaT27S3w" target="_blank">
                                    <div class="dws-share"><i class="fa fa-youtube" aria-hidden="true"></i></div>
-                                   <div class="dws-text">1299</div>
+                                   <div class="dws-text">0</div>
                                 </a></div>
                                 <div class="dws-button dws-odnoklassniki"><a href="#">
                                    <div class="dws-share"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></div>
@@ -140,8 +140,8 @@
                              
                               ?>
 
-                             <div id="anchorforit" class="comments__form" >
-                                <form  action="insertcomments/insertcomment.php #anchorforit" method="post" class="frm__comments">
+                             <div  class="comments__form" >
+                                <form  action="insertcomments/insertcomment.php "  method="post" class="frm__comments">
                                     
                                   
                                 
@@ -187,10 +187,10 @@
                                     <?php  
                                     
                                     
-                                    $id = isset($_GET['id']) ? $_GET['id']: 1 ;
-                                     $limit = 13 ;
-                                     $offset =  $limit * ($id -1);
-                                     $comments= get_all_comments($limit,$offset);
+                                    $page = isset($_GET['?page']) ? $_GET['?page']: 1 ;
+                                     $limit = 6 ;
+                                     $offset =  $limit * ($page -1);
+                                     $comments= get_all_comments($offset,$limit);
                                      
                                      
 

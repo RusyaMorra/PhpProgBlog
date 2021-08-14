@@ -176,9 +176,9 @@ function insert_author($author_name,$email,$password){
 //get all comments
 
 
-function get_all_comments($limit,$offset){
+function get_all_comments($offset,$limit){
     global  $db;
-    $allcomments =  $db->query("SELECT * FROM comments LIMIT $limit  OFFSET $offset ");
+    $allcomments =  $db->query("SELECT * FROM comments  WHERE   `id` > 0  LIMIT $offset,$limit ");
     return $allcomments;
 }
 

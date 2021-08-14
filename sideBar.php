@@ -5,10 +5,10 @@
                         <label class="search__text" for="site-search">Search the site:</label>
                        
                        <div class="search__wrapper">
-                            <input class="search__input" type="search" id="site-search" name="q"
+                            <input class="search__input" type="search" id="elastic" name="q"
                                 aria-label="Search through site content" placeholder="Search">
                             
-                            <button class="btn1">Search</button>
+                            <button type="submit" class="btn1">Search</button>
                        </div>
                     </div>
                     <div class="sidebar__categories">

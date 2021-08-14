@@ -3,7 +3,8 @@
             <div class="wrapper__main">
                 <div class="content__part">
                    
-
+                 
+                    
 
                 <?php
                    $page = isset($_GET['page'])? $_GET['page']:1 ;
@@ -22,11 +23,11 @@
                       
                     ?>
                   <?php  if($_SERVER['REQUEST_URI'] == '/main.php' || $_GET['page']){ ?>
-                    <div  data-aos="zoom-in" class="info__box">
-                    <a href="postPage.php?id= <?php echo $single["id"]; ?>" class="linktothesecondpage">   <button class="read">READ</button></a>
+                    <div   class="info__box">
+                    <a href="postPage.php?id= <?php echo $single["id"]; ?>" class="linktothesecondpage">   <button  class="read">READ</button></a>
                        <div class="content__area">
                            
-                           <img src="<?php echo $single["img"]; ?>" alt="" class="box__img">
+                           <img  src="<?php echo $single["img"]; ?>" alt="" class="box__img">
                            <div class="textcontent__box">
                                <div class="categ__article__descri">
                                     <div class="categoris"><?php echo $category_name; ?></div>
